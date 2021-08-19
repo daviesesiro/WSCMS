@@ -10,6 +10,6 @@ export const signin = (req: Request, res: Response) => {
   res.status(401).render("index", { error: "User not found" });
 };
 
-export const getSignin = (req: Request, res: Response) => {
+export const getSignin = (_req: Request, res: Response) => {
   res.render("index", { error: "" });
 };
