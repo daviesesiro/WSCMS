@@ -8,5 +8,8 @@ module.exports = {
   port: 5432,
   entities: ["dist/models/*.js"],
   logging: true,
-  ssl: { rejectUnauthorized: false },
+  ssl:
+    process.env.NODE_ENV === "development"
+      ? undefined
+      : { rejectUnauthorized: false },
 };
