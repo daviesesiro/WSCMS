@@ -13,7 +13,6 @@ router.post("/api/trigger", async (req: Request, res: Response) => {
     body: req.body.message,
   });
   subs.forEach((sub) => {
-    console.log(sub);
     webpush.sendNotification(sub.subscription, payload);
   });
 
