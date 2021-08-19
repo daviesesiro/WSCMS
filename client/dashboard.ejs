@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>WSCMS dashboard</title>
+</head>
+
+<body class="bg-blue-50">
+    <h1 class="p-3 font-bold text-blue-700 bg-white">WMCMS</h1>
+
+    <div class="flex flex-col items-stretch px-3 mt-12">
+        <iframe class="mb-10" height="260" style="border: 1px solid #cccccc;"
+            src="https://thingspeak.com/channels/1470725/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=30&title=Temperature+Reading&type=line&xaxis=Time&yaxis=Temperature+%28Celsius%29&yaxismax=50&yaxismin=0"></iframe>
+        <iframe class="mb-10" height="260" style="border: 1px solid #cccccc;"
+            src="https://thingspeak.com/channels/1470725/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=TDS+Reading&type=line&xaxis=TIme&yaxis=TDS+%28ppm%29&yaxismax=1000&yaxismin=0"></iframe>
+
+        <iframe class="mb-10" height="260" style="border: 1px solid #cccccc;"
+            src="https://thingspeak.com/channels/1470725/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Eleactrical+Conductivity+Reading&type=spline&xaxis=Time&yaxis=EC+%28%C2%B5S%2Fcm%29&yaxismax=1000&yaxismin=0"></iframe>
+
+        <iframe class="mb-10" height="260" style="border: 1px solid #cccccc;"
+            src="https://thingspeak.com/channels/1470725/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+
+        <iframe class="mb-10" height="260" style="border: 1px solid #cccccc;"
+            src="https://thingspeak.com/channels/1470725/widgets/349036"></iframe>
+
+
+    </div>
+
+
+    <script src="client.js"></script>
+
+
+</body>
+
+</html>

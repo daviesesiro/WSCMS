@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Water monitoring system</title>
+</head>
+
+<body class="bg-blue-50">
+
+    <h1 class="p-3 font-bold text-blue-700 bg-white">WMCMS</h1>
+
+    <div class="mt-10 text-center">
+        <h2 class="text-3xl font-semibold text-blue-700">Welcome back</h2>
+        <p class="font-light">Please sign in to access dashboard</p>
+    </div>
+
+    <div class="w-11/12 mx-auto mt-16">
+        <form method="POST" action="/">
+            <p class="error font-semibold text-center text-red-700">
+                <%= error %>
+            </p>
+            <div class="mb-5">
+                <label class="block text-blue-700" for="email">Email</label>
+                <input class="w-full p-2 text-lg rounded" placeholder="email@domain.com" type="email" name="email"
+                    id="email" required>
+            </div>
+            <div class="mb-5">
+                <label class="block text-blue-700" for="password">Password</label>
+                <input class="w-full p-2 text-lg rounded" placeholder="********" type="password" name="password"
+                    id="password" required>
+            </div>
+            <button class="hover:bg-blue-600 block w-full p-2 mx-auto text-white bg-blue-500 rounded-md">Sign
+                In</button>
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>
